@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <title>document</title>
+</head>
+
+<body>
+    <main>
+        <div class="content">
+            <div class="transcript">
+                <h2> BANG DIEM </h2>
+                <div class="input_transcript">
+                    <div class="label">
+                        <label for="semester_1">Semester1:</label>
+                        <label for="semester_2">Semester2:</label>
+                        <label for="year">Year:</label>
+                        <label for="summerise">Summerise:</label>
+                    </div>
+                    <div class="input">
+                        <input type="number" name="" id="semester_1"><br><br>
+                        <input type="number" name="" id="semester_2"><br><br>
+                        <select name="" id="Year">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select><br> <br>
+                        <input type="number" name="" id="summerise">
+                        <p id="result"></p>
+                        <div class="button">
+                            <input onclick="result(semester_1.value,semester_2.value,Year.value,summerise.value)"
+                                type="button" value="OK">
+                            <input onclick="cancel()" type="button" value="Cancel">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="./js.js"></script>
+</body>
+
+</html>
